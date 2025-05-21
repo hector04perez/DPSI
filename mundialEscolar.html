@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar + Carousel Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        /* Margen de 200px en los 4 lados del container principal */
+                .main-container {
+                    margin: 200px;
+                }
+                /* Estilo opcional para los sub-containers (con fondo y borde) */
+                .sub-container {
+                    background-color: #f8f9fa;
+                    border: 1px solid #dee2e6;
+                    border-radius: 8px;
+                    padding: 20px;
+                    height: 200px; /* Altura fija para visualización */
+                }
+                /* Responsive: Reduce el margen en pantallas pequeñas */
+                @media (max-width: 768px) {
+                    .main-container {
+                        margin: 50px;
+                    }
+                }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand  fs-5" href="#">Mundial Internacional de Futbol</a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav"
+                aria-label="Toggle navigation"  
+                aria-expanded="false"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Container principal con margen de 200px -->
+    <div class="main-container">
+        <!-- Fila con 4 columnas (sub-containers) -->
+        <div class="row g-4"> <!-- "g-4" agrega espacio entre columnas -->
+            <!-- Sub-container 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="sub-container">
+                    <h3>Container 1</h3>
+                    <p>Contenido aquí...</p>
+                </div>
+            </div>
+            <!-- Sub-container 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="sub-container">
+                    <h3>Container 2</h3>
+                    <p>Contenido aquí...</p>
+                </div>
+            </div>
+            <!-- Sub-container 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="sub-container">
+                    <h3>Container 3</h3>
+                    <p>Contenido aquí...</p>
+                </div>
+            </div>
+            <!-- Sub-container 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="sub-container">
+                    <h3>Container 4</h3>
+                    <p>Contenido aquí...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (opcional, solo si necesitas funcionalidades) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
